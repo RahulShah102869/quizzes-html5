@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <h1>HTML5 Quiz
+            <span>MCQ</span>
+        </h1>
+        <div class="subhead">10 questions · choose the correct option</div>
+
+        <div id="quizMain">
+            <div class="quiz-progress">
+                <span>Progress</span>
+                <span id="questionCounter">1 / 10</span>
+            </div>
+            <div class="quiz-body">
+                <div class="question-text" id="questionText">Loading question...</div>
+                <div class="options-grid" id="optionsContainer">
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn-prev" id="prevBtn" disabled>← Previous</button>
+                    <button class="btn-next" id="nextBtn">Next →</button>
+                </div>
+            </div>
+        </div>
+        <div id="resultScreen" class="hidden">
+            <div class="result-area">
+                <div style="font-size: 1.2rem; font-weight: 600; color: #1c5a3b;">QUIZ COMPLETED</div>
+                <div class="score-big" id="finalScore">0 <small>/ 10</small></div>
+                <div class="result-message" id="resultMessage">Good job!</div>
+                <div class="review-list" id="reviewList"></div>
+                <button class="btn-restart" id="restartBtn" style="margin-top: 1rem;">Restart Quiz</button>
+            </div>
+        </div>
+        <div class="footer-note">HTML5 · 10 multiple choice questions</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
